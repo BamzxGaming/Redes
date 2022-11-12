@@ -6,14 +6,22 @@
   <title>Bamz Gaming</title>
   <base href="/">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale.10">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/857482600124776468/1040711745515302942/image-modified.png"> 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<style>
+<style> /* */
+
+.contenedor{
+  width:100%;
+  max-width: 500px;
+  min-width: 50px;
+  margin: 0 auto;
+  overflow:hidden;
+}
 
  /*FOTO PERFIL*/
-.perfil {
-  text-align: center;
+ .perfil {
   border-radius: 175px;
   background: #7106a2;
   box-shadow:  15px 15px 30px #440461,
@@ -22,10 +30,13 @@
 /*FOTO PERFIL*/
   
 /* CENTRAR */
-.centrar {
+.center{
         text-align: center;
+        padding: 30px;
       }
 /* CENTRAR */
+  
+/* */
  
 /* nickname */
 button,
@@ -177,13 +188,14 @@ button:hover::after {
 </head>
    
 <body>
+<div class="contenedor">  
   <ul>
-    <div class="centrar">
-      <img class="perfil" style="border-radius: 175px;" src="https://cdn.discordapp.com/attachments/882046089425989682/1040084461171257364/image.png" height="150" width="150">
+    <div class="center">
+      <img class="perfil" style="border-radius: 50%;" src="https://cdn.discordapp.com/attachments/882046089425989682/1040084461171257364/image.png" height="150" width="150">
     </div>
     <button> Bamz Gaming
     </button>
-    <li style="--clr:#a970ff">
+    <li style="--clr:#a970ff"> 
       <a href="https://www.twitch.tv/bamzx1" href="#" data-text="&nbsp;Twitch">&nbsp;Twitch&nbsp;</a>
     </li>
     <li style="--clr:#5865f2">
@@ -199,6 +211,7 @@ button:hover::after {
       <a href="https://www.facebook.com/groups/1055373728202418" href="#" data-text="&nbsp;Facebook">&nbsp;Facebook&nbsp;</a>
     </li>
     </ul>
+</div>
 </body>
 
 </html>
